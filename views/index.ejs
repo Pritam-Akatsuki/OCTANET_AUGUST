@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TODO</title>
+</head>
+
+<body>
+    <div class="navi">
+        <ul>
+            <li><img src="images/today.png" alt="today" id="img1"><a href="/">Today</a></li>
+            <!-- <li><img src="images/work.png" alt="work" id="img2"><a href="/work">Work</a></li> -->
+        </ul>
+    </div>
+    <div class="container">
+        <div class="date">
+            <h1 id="currentDate">
+                <%= date %>
+            </h1>
+        </div>
+        <div class="con2">
+            <div class="box">
+                <% if(locals.array){ %>
+                    <% array.forEach(function(item){ %>
+                        <div class="item">
+                            <form action="/delete" method="post" id="dt_form">
+                                <input type="checkbox" name="chkBox" value="<%= item._id %>"
+                                    onchange="this.form.submit()">
+                                <p>
+                                    <%= item.name %>
+                                </p>
+                                <p id="para_date">
+                                    <%= item.deadline %>
+                                </p>
+                            </form>
+                        </div>
+                        <% }); %>
+                            <% } %>
+                                <form action="/" method="post" id="sub_form">
+                                    <label for="task" class="data">Enter Task: </label>
+                                    <input id="txtIn" class="data" type="text" placeholder="Add Task" name="task">
+                                    <label for="deadline" class="data">Enter deadline: </label>
+                                    <input type="date" class="data" name="deadline" id="date_ls">
+                                    <label for="time" class="data data2">Enter deadline time: </label>
+                                    <input type="time" class="data data2" name="time" id="time"><br>
+                                    <button type="submit" name="list" id="btn_ls">+</button>
+                                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("click", function (event) {
+            if (event.target && event.target.matches('input[type="checkbox"]')) {
+                const checkbox = event.target;
+                const taskDiv = checkbox.closest(".item");
+                console.log(checkbox);
+                console.log(taskDiv);
+
+                if (checkbox.checked) {
+                    taskDiv.classList.add("completed-task");
+                } else {
+                    taskDiv.classList.remove("completed-task");
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

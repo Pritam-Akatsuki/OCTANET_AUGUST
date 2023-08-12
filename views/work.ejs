@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Work</title>
+</head>
+
+<body>
+    <div class="navi">
+        <ul>
+            <li><img src="images/today.png" alt="today" id="img1"><a href="/">Today</a></li>
+            <li><img src="images/work.png" alt="work" id="img2"><a href="">Work</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="date">
+            <h1>Work list</h1>
+        </div>
+        <div class="con2">
+            <div class="box">
+                <% if(locals.array){ %>
+                    <% for(i=0;i<array.length;i++){ %>
+                        <div class="item">
+                            <input type="checkbox">
+                            <p>
+                                <%= array[i] %>
+                            </p>
+                        </div>
+                        <% } %>
+                            <% } %>
+                                <form action="/work" method="post">
+                                    <input id="txtIn" type="text" placeholder="Add Task" name="task">
+                                    <button type="submit" name="list">+</button>
+                                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("click", function (event) {
+            if (event.target && event.target.matches('input[type="checkbox"]')) {
+                const checkbox = event.target;
+                const taskDiv = checkbox.closest(".item");
+                console.log(checkbox);
+                console.log(taskDiv);
+
+                if (checkbox.checked) {
+                    taskDiv.classList.add("completed-task");
+                } else {
+                    taskDiv.classList.remove("completed-task");
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
