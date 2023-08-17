@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://icons.iconarchive.com/icons/dakirby309/simply-styled/128/YouTube-icon.png">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="img/logo.PNG" class="logo" alt="notfound">
+        <div class="search-box">
+            <input type="text" class="search-bar rounded-start-pill" placeholder="search">
+            <button class="search-btn "><img src="img/search.PNG" alt=""></button>
+            <img src="img/mic_01.jpg" class="rounded-circle mx-2" alt="notfound">
+            
+        </div>
+        <div class="user-options">
+            <img src="img/video.PNG" class="icon" alt="">
+          
+            <img src="img/bell.PNG" class="icon" alt="">
+           
+        </div>
+        <div class="profile-container ">
+            <img src="https://yt3.ggpht.com/yti/AOXPAcVM0nvezl-AlHqaeROSUKT6f0EzMHnJQSdk0lbJgw=s108-c-k-c0x00ffffff-no-rj" class="profile-image rounded-circle" alt="Profile" onclick="toggleProfile()">
+            <div class="popup" id="profilePopup">
+              <!-- Profile content goes here -->
+              <div class="popup-content">
+                <div class="row">
+                    <div class="col-2"><img src="https://yt3.ggpht.com/yti/AOXPAcVM0nvezl-AlHqaeROSUKT6f0EzMHnJQSdk0lbJgw=s108-c-k-c0x00ffffff-no-rj" class="rounded-circle size " alt="no"></div>
+                    <div class="col-8"><h6>Pritam Lambade <br> <p>pritamlambade@gmail.com</p></h6>
+                    <a href="#" class="sm-size mb-5 link-without-underline">Manage your Google Account</a>
+                    </div>
+                </div>
+            <hr>
+     <a href="#" class="links"><img src="https://cdn.iconscout.com/icon/free/png-256/free-user-square-3602266-3005800.png?f=webp&w=128" alt="">Create a channel
+     </a>
+     <a href="#" class="links"><img src="https://static.vecteezy.com/system/resources/previews/017/396/826/original/youtube-studio-icons-free-png.png" alt="">YouTube Studio
+     </a>
+     <a href="#" class="links"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0r2DA9Vb8YqYEwwNS1fcJUz9hWw50tVlecB9zqxuRMnPjKQyt" alt="">Switch account
+     </a>
+     <a href="#" class="links"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSWpyIABKdcmNrcnr6nnvSjqkW784_CZkSikh0dcZ8Uc58vtCN" alt="">Sign out</a>
+
+     <hr>
+    <a href="#" class="links"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9jo3swTj5KRWRf18S8UuM-SYy2mDTwBmbc4bCnROPe_JaRe4Y" alt="">Purchases and memberships</a>
+    <a href="#" class="links"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4xoTnDMoIztBCYe82nYK69HkpZSzD4rhnbd06YTiC660oyMYm" alt="">Your data in YouTube</a>
+     <hr>
+     <a href="#" class="links"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7g-mhweyci8bZSzPzjrfe-SI3xQ6MNur1WLCLUitw-lscVuyT" alt="">Appearance: Device theme
+     </a>
+    <a href="#" class="links"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc9wpevYZjBy8fFXViQbz-l3Sdojli_y2wKalbLLV2M9MlvBzh" alt="">Language: British English</a>
+    <a href="#" class="links"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4xoTnDMoIztBCYe82nYK69HkpZSzD4rhnbd06YTiC660oyMYm" alt="">Restricted Mode:Off</a>
+    <a href="#" class="links"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjB8dJDg1zkaYYhE0PYBF39FIq-_dfuGr8rh5DO9il279dya-g" alt="">Location: India</a>
+
+              </div>
+            </div>
+          </div>
+    </nav>
+
+    <!-- sidebar -->    
+    <div class="row">
+        
+    <div class="side-bar col-2">
+        <a href="#" class="links"><img src="https://www.freepnglogos.com/uploads/logo-home-png/home-transparent-home-images-10.png" alt="">home</a>
+        <a href="#" class="links"><img src="img/short.png" alt="">Shorts</a>
+        <a href="#" class="links"><img src="img/subscription.PNG" alt="">subscription</a>
+        <!-- <hr class="seperator"> -->
+        <hr>
+        <a href="#" class="links"><img src="img/library.PNG" alt="">library</a>
+        <a href="#" class="links"><img src="img/history.PNG" alt="">history</a>
+        <a href="#" class="links"><img src="https://cdn.iconscout.com/icon/free/png-256/free-watch-later-1781603-1513853.png?f=webp" alt="">Watch later</a>
+       
+        <a href="#" class="links"><img src="https://logowik.com/content/uploads/images/940_like_icon.jpg" alt="">like video</a>
+        
+        <hr>
+        <h5>Subscriptions</h5>
+        <a href="https://www.youtube.com/@CodeWithHarry" class="links"><img src="https://yt3.googleusercontent.com/ytc/AOPolaQMtqt8g-xxJ3BkIF06RPiJcIsPzbSOLOwDVAA5pw=s176-c-k-c0x00ffffff-no-rj" alt="">CodeWithHarry</a>
+        <a href="https://www.youtube.com/@NetNinja" class="links"><img src="https://yt3.googleusercontent.com/ytc/AOPolaRZ_YQDWsp_xli4C-dj0ArYih76vbn_Ck-wg8Dz8w=s176-c-k-c0x00ffffff-no-rj" alt="">The Net Ninja</a>
+        <a href="https://www.youtube.com/@geekyshows" class="links"><img src="https://yt3.googleusercontent.com/ytc/AOPolaS6RAp0DURa7_plgauzOJ31MbHB5ulG8uQ5UVkTnQ=s176-c-k-c0x00ffffff-no-rj" alt="">Geeky Shows </a>
+
+    </div>
+
+    <!-- filters -->
+    <div class="col-12">
+    <div class="filters">
+        <button class="filter-options active">All</button>
+        <button class="filter-options">CSS</button>
+        <button class="filter-options">Web development</button>
+        <button class="filter-options">Python</button>
+        <button class="filter-options">Entertainment</button>
+        <button class="filter-options">Marvel</button>
+        <button class="filter-options">JavaScript</button>
+        <button class="filter-options">Artificial Intelligence</button>
+        <button class="filter-options">Machine learning</button>
+        <button class="filter-options">Trending</button>
+       
+        <img src="https://icon2.cleanpng.com/20180401/ugq/kisspng-arrow-computer-icons-encapsulated-postscript-next-button-5ac1173d4ac725.6812921615226038373063.jpg" class="sizeimg " alt="notfound">
+      
+
+    </div>
+
+    <!-- videos -->
+    <div class="video-container">
+        <!-- <div class="video">
+            <img src="img/profile-pic.png" class="thumbnail" alt="">
+            <div class="content">
+                <img src="img/profile-pic.png" class="channel-icon" alt="">
+                <div class="info">
+                    <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                    <p class="channel-name">modern web</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+
+    
+</div>
+</div>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+</body>
+</html>
