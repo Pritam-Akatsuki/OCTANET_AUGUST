@@ -1,6 +1,7 @@
 const videoCardContainer = document.querySelector('.video-container');
 
-let api_key = "AIzaSyBYJv-M14swQJorLvTo6Vg2qIdJrdx5THk";
+let api_key = "Enter Your API";
+//Get your youtube API from google cloud
 let video_http = "https://www.googleapis.com/youtube/v3/videos?";
 let channel_http = "https://www.googleapis.com/youtube/v3/channels?";
 
