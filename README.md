@@ -1,7 +1,7 @@
 # OCTANET_AUGUST
 
 Task-01
-Discription:
+Discription:Landing Page
 ---
 Welcome to our Simple Landing Page! 
 
@@ -12,9 +12,9 @@ In a world where complexity can sometimes cloud our digital interactions, our Si
 ---------
 Task-03
 Discription:
+**YouTube Clone Project: **
 ---
-![yt-bg](https://github.com/Pritam-Akatsuki/OCTANET_AUGUST/assets/136802288/b007f038-a3c9-41fd-a0c1-b5e3b08da193)
 
-**YouTube Clone Project: Where Code Meets Creativity**
+![yt-bg](https://github.com/Pritam-Akatsuki/OCTANET_AUGUST/assets/136802288/b007f038-a3c9-41fd-a0c1-b5e3b08da193)
 
 Discover the YouTube Clone Project – a fusion of HTML, CSS, JavaScript, Bootstrap, and the dynamic YouTube API. Experience a sleek design, responsive layout, and interactive features mirroring the original platform. Bootstrap ensures seamless navigation, while JavaScript powers video playback and dynamic content. The YouTube API integration brings real-time data, including trending videos and comments. Whether you're a beginner or expert, this project offers hands-on learning and a chance to explore the exciting world of web development. Join us and unleash your coding potential today!
