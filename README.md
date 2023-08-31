@@ -3,6 +3,8 @@
 Task-01
 Discription:Landing Page
 ---
+https://github.com/Pritam-Akatsuki/OCTANET_AUGUST/assets/136802288/8f37a8d7-b953-49ea-8383-a7f3abcb801c
+
 Welcome to our Simple Landing Page! 
 
 Simplicity is at the heart of everything we do, and our landing page is no exception. Here, you'll find a clean and intuitive interface designed to provide you with quick and easy access to the information you're seeking. 
