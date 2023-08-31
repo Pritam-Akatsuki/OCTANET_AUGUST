@@ -2,7 +2,12 @@
 Description: 
 ---
 
-It is an innovative to-do list project that combines the power of HTML, CSS, JavaScript, and SQL to provide users with a dynamic and efficient task management solution. This project leverages the front-end trio of web technologies to create an intuitive user interface, while utilizing SQL for the backend to store and retrieve task data.
+https://github.com/Pritam-Akatsuki/OCTANET_AUGUST/assets/136802288/d4cd3715-a532-40fa-98c9-8cfe6f61df95
+
+It is an innovative to-do list project that combines the power of HTML, CSS, JavaScript, and SQL to provide users with a dynamic and efficient task management solution. This project leverages the 
+
+
+front-end trio of web technologies to create an intuitive user interface, while utilizing SQL for the backend to store and retrieve task data.
 
 It offers a seamless and user-friendly experience, allowing users to create, update, and manage tasks effortlessly. The HTML structure provides the foundation for displaying tasks and interacting with the application, while CSS enhances the design and visual appeal.
 
